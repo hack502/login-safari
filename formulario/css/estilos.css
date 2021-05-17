@@ -1,0 +1,78 @@
+:root {
+    --gradient: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    --gradient1: linear-gradient(120deg, #f6d46562 0%, #fd9f8562 100%);
+    --url-img: url("..//img/imagen1.jpg");
+    --box-shadow: 6px 6px 10px rgba(0, 0, 0, .6);
+    --width: 100%;
+    --radius: 8px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: var(--url-img);
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    display: block;
+    text-align: center;
+    margin: 70px auto;
+    width: 400px;
+    background-image: url(/img/animal1.jpg);
+    padding: 30px 20px 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    background: #ffff;
+}
+
+.input {
+    display: block;
+    width: var(--width);
+    padding: 20px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #b39b9b;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.input,
+.form-submit {
+    font-family: inherit;
+}
+
+.form-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mensaje {
+    overflow: hidden;
+    max-width: var(--width);
+    min-width: var(--width);
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.form-submit {
+    background-image: url(/img/animal2.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
